@@ -1,0 +1,138 @@
+*,
+* button,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+html {
+    font-size: 90%;
+    /* font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Lexend Deca', sans-serif; */
+}
+h1, p, button {
+    margin: 0.9rem 0;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: -2px;
+}
+p {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.7;
+}
+body {
+    line-height: 1.5;
+    background-color: #F2F2F2;
+    color: #ffffff;
+    display: grid;
+    place-content: center;
+}
+
+/* Card width, colors and Design */
+.preview_card {
+    max-width: 100rem;
+    min-height: 100vh;
+    margin: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card_item{
+    width: 150%;
+    padding: 4rem;
+}
+.card_item:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #E28525;
+    
+}
+.card_item:nth-child(2) {
+    background-color: #016972;
+}
+.card_item:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #00403F;
+}
+
+/* Button Design*/
+button {
+    border: none;
+    width: 125px;
+    padding: 1rem;
+    border-radius: 50px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.card_item:first-child button {
+    color: #E28525;
+    font: '';
+}
+.card_item:nth-child(2) button {
+    color: #016972;
+    font: '';
+}
+.card_item:last-child button {
+    color: #00403F;
+    font: '';
+}
+.card_item:first-child button:hover{
+    background-color: #E28525;
+    color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    font: '';
+}
+.card_item:nth-child(2) button:hover{
+    background-color: #016972;
+    color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    font: '';
+}
+.card_item:last-child button:hover{
+    background-color: #00403F;
+    color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    font: '';
+}
+
+/* 920px and UP */
+@media screen and (min-width: 57.5em) {
+    h1, p, button {
+        margin: 1.5rem 0;
+    }
+    .preview_card {
+        max-width: 100rem;
+        min-height: 100vh;
+        margin: 2rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card_item{
+        width: 20em;
+        padding: 3rem;
+    }
+    .card_item:first-child {
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: #E28525;
+    }
+    .card_item:nth-child(2) {
+        background-color: #016972;
+    }
+    .card_item:last-child {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: #00403F;
+    }
+}
