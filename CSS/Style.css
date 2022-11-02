@@ -70,6 +70,7 @@ button {
     padding: 1rem;
     border-radius: 50px;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    border: 2px solid #F2F2F2;
 }
 .card_item:first-child button {
     color: #E28525;
@@ -86,19 +87,16 @@ button {
 .card_item:first-child button:hover{
     background-color: #E28525;
     color: #F2F2F2;
-    border: 2px solid #F2F2F2;
     font: '';
 }
 .card_item:nth-child(2) button:hover{
     background-color: #016972;
     color: #F2F2F2;
-    border: 2px solid #F2F2F2;
     font: '';
 }
 .card_item:last-child button:hover{
     background-color: #00403F;
     color: #F2F2F2;
-    border: 2px solid #F2F2F2;
     font: '';
 }
 
